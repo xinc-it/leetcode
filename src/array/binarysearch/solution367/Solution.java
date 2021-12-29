@@ -1,4 +1,4 @@
-package array.solution367;
+package array.binarysearch.solution367;
 
 /**
  * Date：2021/12/28
