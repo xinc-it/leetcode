@@ -29,6 +29,6 @@ public class Solution5 {
         buffer.append(aChar);
       }
     }
-    return buffer.toString();
+//    return buffer.toString();
   }
 }
