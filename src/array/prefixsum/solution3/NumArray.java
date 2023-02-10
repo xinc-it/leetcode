@@ -1,5 +1,7 @@
 package array.prefixsum.solution3;
 
+import java.util.Arrays;
+
 /**
  * Date：2021/12/28
  * Description：TODO
@@ -10,24 +12,21 @@ package array.prefixsum.solution3;
 public class NumArray {
 
 
-    private int[] nums;
-    private int[] numsSum;
+    //sum[i]等于nums[0,i-1]的和
+    public int[] sums;
 
     public NumArray(int[] nums) {
-        this.nums = nums;
-        numsSum = new int[nums.length];
-        numsSum[0] = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            numsSum[i] += numsSum[i - 1] + nums[i];
+        //初始化前缀和数组
+        sums = new int[nums.length + 1];
+        for (int i = 0; i < nums.length; i++) {
+            // 计算前缀和数组值
+            sums[i + 1] = sums[i] + nums[i];
         }
-
+        System.out.println(Arrays.toString(sums));
     }
 
     public int sumRange(int left, int right) {
-        int result = numsSum[right];
-        for (int i = 0; i < left; i++) {
-            result -= nums[i];
-        }
-        return result;
+        //计算nums[left,right]之间的和
+        return sums[right + 1] - sums[left];
     }
 }
