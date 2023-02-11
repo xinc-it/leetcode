@@ -1,10 +1,11 @@
-package array.prefixsum.solution3;
+package array.prefixsum;
 
 import java.util.Arrays;
 
 /**
  * Date：2021/12/28
- * Description：TODO
+ * Description：https://leetcode.cn/problems/range-sum-query-immutable/
+ * 前缀和
  *
  * @author xinC
  * @version 1.0
