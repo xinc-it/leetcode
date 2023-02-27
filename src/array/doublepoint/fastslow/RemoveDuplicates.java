@@ -1,4 +1,4 @@
-package array.doublepoint;
+package array.doublepoint.fastslow;
 
 /**
  * Date：2023/2/19

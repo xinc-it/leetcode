@@ -1,4 +1,4 @@
-package array.doublepoint;
+package array.doublepoint.fastslow;
 
 import struct.ListNode;
 
