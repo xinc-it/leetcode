@@ -15,7 +15,9 @@ public class ReverseString {
         int left, right;
         left = 0;
         right = s.length - 1;
+        //设定循环条件
         while (left < right) {
+            //设定指针移动条件
             if (s[left] != s[right]) {
                 char temp = s[left];
                 s[left] = s[right];
